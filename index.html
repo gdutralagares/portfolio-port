@@ -140,7 +140,40 @@
         </div>
       </div>
     </div>
-    <a href="#" class="btn">Veja mais</a>
+    <div class="container2">
+      <div class="work-list">
+        <div class="work">
+          <img src="images/mywork1.png" alt="">
+          <div class="layer">
+            <h3>Chilly Bowl Website</h3>
+            <p>Um exemplo  de design clean e visualmente atraente, onde cada elemento é cuidadosamente posicionado para criar uma experiência de usuário cativante.<br>Html / Css / JavaScript</p>
+            <a href="https://github.com/gdutralagares/salad-project" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github'></i></a>
+            <a href="https://salad-project.netlify.app/" target="_blank" rel="noopener noreferrer"><i class='bx bx-link'></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/mywork2.png" alt="">
+          <div class="layer">
+            <h3>Eccomerce Website</h3>
+            <p>
+              Essa plataforma online foi projetada para oferecer uma experiência eficiente de venda de produtos com uma interface intuitiva e amigável. <br>Html / Css / JavaScript</p>
+            <a href="https://github.com/gdutralagares/e-comerce" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github'></i></a>
+            <a href="https://lagares-shop.netlify.app/" target="_blank" rel="noopener noreferrer"><i class='bx bx-link'></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/mywork3.png"" alt="">
+          <div class="layer">
+            <h3>Drop Down Menu</h3>
+            <p>Design utilizado para apresentar uma lista de opções ou escolhas de navegação de forma hierárquica.<br>Html / Css / JavaScript</p>
+            <a href="https://github.com/gdutralagares/DropDownMenu" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github'></i></a>
+            <a href="https://menu-drop.netlify.app/" target="_blank" rel="noopener noreferrer"><i class='bx bx-link'></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button id="show-or-hide">Veja mais</button>
+
 </div>
 </div>
 </div>
@@ -187,6 +220,20 @@
     function closemenu(){
       sidemenu.style.right = "-200px";
     }
+  </script>
+  <script>
+    var btn = document.querySelector('#show-or-hide');
+    var container2 = document.querySelector('.container2');
+
+    btn.addEventListener('click', function(){
+      if(container2.style.display === 'block'){
+        container2.style.display = 'none';
+        btn.innerHTML = "Ver mais"
+      } else{
+        container2.style.display = 'block';
+        btn.innerHTML = "Minimizar"
+      }
+    })
   </script>
 
 </body>
