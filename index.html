@@ -11,6 +11,7 @@
 
 </head>
 <body>
+  <a href="#header" class="scroll-top"><i class='bx bxs-up-arrow-circle'></i></a>
   <div id="header">
     <div class="container">
       <nav>
@@ -238,6 +239,12 @@
       }
     })
   </script>
+  <script>
+    let scrolltop = document.querySelector(".scroll-top");
 
+window.addEventListener("scroll", () => {
+  scrolltop.classList.toggle("active", window.scrollY > 0);
+});
+  </script>
 </body>
 </html>
